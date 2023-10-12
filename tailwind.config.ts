@@ -1,29 +1,28 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: ["class"],
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   theme: {
     colors: {
       blue: {
-        marine: "#02295a",
-        purplish: "#473dff",
-        pastel: "#adbeff",
-        light: "#bfe2fd",
+        marine: "hsl(213, 96%, 18%)",
+        purplish: "hsl(243, 100%, 62%)",
+        pastel: "hsl(228, 100%, 84%)",
+        light: "hsl(206, 94%, 87%)",
       },
       gray: {
-        cool: "#9699ab",
-        light: "#d6d9e6",
+        cool: "hsl(231, 11%, 63%)",
+        light: "hsl(229, 24%, 87%)",
       },
-      "strawberry-red": "#ed3548",
-      magnolia: "#f0f6ff",
-      alabaster: "#fafbff",
-      white: "#ffffff",
+      "strawberry-red": "hsl(354, 84%, 57%)",
+      magnolia: "hsl(217, 100%, 97%)",
+      alabaster: "hsl(231, 100%, 99%)",
+      white: "hsl(0, 0%, 100%)",
     },
   },
-  plugins: [],
 };
-export default config;

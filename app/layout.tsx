@@ -32,10 +32,7 @@ export default function RootLayout({
           />
           <PageSelector />
         </header>
-        <div className="relative">
-          {children}
-        </div>
-        
+        <div className="relative">{children}</div>
       </body>
     </html>
   );

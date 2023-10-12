@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Switch } from "@/app/components/ui/switch";
 
 import arcade from "@/public/icon-arcade.svg";
 import advanced from "@/public/icon-advanced.svg";
@@ -28,6 +29,7 @@ export default function PlanSelect() {
           <section className="flex flex-col">
             <h2 className="text-base text-blue-marine font-medium">arcade</h2>
             <p className="text-gray-cool lowercase">$9/mo</p>
+            <p className="text-blue-marine lowercase">2 months free</p>
           </section>
         </div>
         <div className="flex flex-row gap-3 border border-gray-light p-4 rounded-md">
@@ -40,6 +42,7 @@ export default function PlanSelect() {
           <section className="flex flex-col">
             <h2 className="text-base text-blue-marine font-medium">arcade</h2>
             <p className="text-gray-cool lowercase">$12/mo</p>
+            <p className="text-blue-marine lowercase">2 months free</p>
           </section>
         </div>
         <div className="flex flex-row gap-3 border border-gray-light p-4 rounded-md">
@@ -47,14 +50,12 @@ export default function PlanSelect() {
           <section className="flex flex-col">
             <h2 className="text-base text-blue-marine font-medium">arcade</h2>
             <p className="text-gray-cool lowercase">$15/mo</p>
+            <p className="text-blue-marine lowercase">2 months free</p>
           </section>
         </div>
-        <div className="flex flex-row bg-alabaster rounded-md p-4 items-center">
+        <div className="flex flex-row gap-4 bg-alabaster rounded-md p-4 items-center justify-center">
           <p>monthly</p>
-          <label className="switch relative inline-block w-14 h-9">
-            <input type="checkbox" className="opacity-0 w-0 h-0" />
-            <span className="slider round absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-strawberry-red transition before:h-7 before:w-7 before:left-1 before:right-1 before:bg-white"></span>
-          </label>
+          <Switch />
           <p>yearly</p>
         </div>
       </form>
